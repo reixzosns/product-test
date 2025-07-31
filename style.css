@@ -1,90 +1,85 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #0a0a0a;
-    color: #00ff00;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
 }
 
 #intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: black;
 }
 
 #intro h1 {
-    font-size: 3em;
-    color: #00ff00;
+  font-size: 3em;
+  color: #00ff00;
 }
 
 #intro button {
-    padding: 1em 2em;
-    font-size: 1.2em;
-    background-color: #00ff00;
-    color: black;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  background-color: #00ff00;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 #main {
-    display: none;
-    padding: 2em;
-    animation: glitch-bg 0.2s infinite;
-}
-
-.hidden {
-    display: none;
+  display: none;
+  padding: 2em;
+  animation: glitch-bg 0.2s infinite;
 }
 
 h1 {
-    color: #ff0000;
-    text-shadow: 0 0 10px red;
+  color: #ff0000;
+  text-shadow: 0 0 10px red;
 }
 
 hr {
-    border: 1px solid #00ff00;
-    margin: 1em 0;
+  border: 1px solid #00ff00;
+  margin: 1em 0;
 }
 
 p {
-    margin: 0.4em 0;
-    font-size: 1.1em;
+  margin: 0.4em 0;
+  font-size: 1.1em;
 }
 
 strong {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 span {
-    color: #00ff00;
-    border-right: 1px solid #00ff00;
-    padding-right: 5px;
-    animation: typing 1s steps(10) forwards;
+  color: #00ff00;
+  border-right: 1px solid #00ff00;
+  padding-right: 5px;
 }
 
 #chatbot {
-    margin-top: 2em;
-    background-color: #111;
-    padding: 1em;
-    border: 1px solid #00ff00;
+  margin-top: 2em;
+  background-color: #111;
+  padding: 1em;
+  border: 1px solid #00ff00;
 }
 
 .bot {
-    margin: 0.5em 0;
-    color: #00ff00;
-    animation: typing 1s steps(20) forwards;
+  margin: 0.5em 0;
+  color: #00ff00;
+  display: none;
 }
 
-/* Glitch animation background */
+/* Background glitch effect */
 @keyframes glitch-bg {
-    0% { background-color: #0a0a0a; }
-    50% { background-color: #111111; }
-    100% { background-color: #0a0a0a; }
+  0% { background-color: #0a0a0a; }
+  50% { background-color: #111111; }
+  100% { background-color: #0a0a0a; }
 }
